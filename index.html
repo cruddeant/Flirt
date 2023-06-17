@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- 
-  Code Made By Deka Tutorial
-  Youtube: Deka Tutorial
-  Tiktok: @deka_tutorial
-  -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hai Bii</title>
+    <title>Hai qt</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet" />
@@ -29,7 +24,7 @@
         </div>
       </div>
     </div>
-    <audio class="audio" src="sound1.mp3" autoplay type="audio" loop=""></audio>
+    <audio class="audio" src="/flirt/sound2.mp3" autoplay type="audio" loop=""></audio>
     <audio class="notif" src="https://dekatutorial.github.io/notif.mp3" type="audio"></audio>
     <div class="background1"></div>
     <div class="background2"></div>
@@ -55,7 +50,7 @@
             <p>Your Love</p>
           </div>
           <div class="isi">
-            <p>Hai bii, i've got a poem for you :)</p>
+            <p>Hai chen, i've got a poem for you :)</p>
           </div>
         </div>
         <div class="notif notif2">
@@ -76,8 +71,8 @@
           </div>
         </div>
         <div class="btn-mulai">
-          <p class="hilang1" onclick="notif1()">Pencet Aku</p>
-          <p class="hilang2">Buka Pesannya</p>
+          <p class="hilang1" onclick="notif1()">Click Me</p>
+          <p class="hilang2">Tap The Message</p>
           <p class="kirimWA">Kirim Pesan Whatsapp</p>
         </div>
       </div>
@@ -87,7 +82,7 @@
       // Custom
       var pengirim = "Puja";
       var musik = "";
-      var ucapan = "Sunyi surabaya di jam 3 pagi\nKu masih berkutik bersama diksi\nMencoba menggambarkan sang saraswati\nYang belum pernah kutemui\n\nSang puan berparas jelita\nKilau matanya adiwarna, tetap tampak meski terhalang lensa\nSenyum nya seindah lembayung swastamita\nSempurna, \nMenjebakku dalam senandika\nBermalam malam, berharap renjana\nBerharap menulis cerita berdua";
+      var ucapan = "he fell first, but he dont know if she fell too\ncause in the last few years, he decide not to\n\nhe fell first, he thought he just tripping\nthen he realized this might got his heart bleeding\n\nhe fell first, but who wouldnt fall seeing that beautiful smile?\nits either he fall, or fly to cloud nine\n\nhe fell first, but turnout she havent even recover when she fell before\nhe know its kinda hard, cause he already felt way more\n\nhe fell first, and he fall in such old fashioned way\nspend month just to make sure this isnt too fast to try\n\nhe fell first, her intelligence just like a trap to him\nthe way she speak and act is just so alluring\n\nhe fell first, but truth is he isnt the type to fall\nhe's the type to rush and pray this is the right call\n\nhe fell first,\nnow would she fell too?";
       var background1 = "";
       var background2 = "";
       var noWhatsapp = "";
@@ -98,7 +93,7 @@
 
         function notif1() { document.querySelector(".hilang1").style.display = "none"; document.querySelector(".hilang2").style.display = "inline-block"; audio.play(); notif.play(); document.querySelector(".notif1").style.transform = "translateX(0)"; } const swalo = Swal.mixin({ confirmButtonColor: "#23a542", allowOutsideClick: false, showCancelButton: false,  }); 
 
-        async function balas() { var { value: nama } = await swalo.fire({ title: "Hope you like it !", confirmButtonText: "Baca", }); if (nama) { document.querySelector(".hilang2").style.display = "none"; txt = "" ; if (ucapan) { txt += ucapan; } typeWriter(); notif2(); } else { await swalo.fire({confirmButtonText: "Iya deh", title: " ", }); balas(); } } 
+        async function balas() { var { value: nama } = await swalo.fire({ title: "Hope you like it !", confirmButtonText: "Open", }); if (nama) { document.querySelector(".hilang2").style.display = "none"; txt = "" ; if (ucapan) { txt += ucapan; } typeWriter(); notif2(); } else { await swalo.fire({confirmButtonText: "Iya deh", title: " ", }); balas(); } } 
 
         function notif2() { notif.play(); document.querySelector(".notif1").style.display = "none"; document.querySelector(".notif2").style.transform = "translateX(0)"; } var i = 0; var speed = 120; 
 
